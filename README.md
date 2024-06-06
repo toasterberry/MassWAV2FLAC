@@ -6,7 +6,7 @@ Feature rich GUI batch WAV to FLAC converter in Python using ffmpeg and optional
 ## Features:
 - Automatically preserves file modification dates from input WAV
 - Converts all applicable files in all subdirectories of selected folder
-- Thurough lossless check (optional)
+- Thorough lossless check (optional)
 - Inefficient conversion detection
 - Allows converts of incompatible container bit depths with compatible content (ex: 32 bit WAV file with only 24 bit content > 24 bit FLAC)
 - FLAC > WAV mode
