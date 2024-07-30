@@ -41,6 +41,8 @@ By default, this script converts WAVs to FLAC. However, you can use the dropdown
 ### GPU mode (experimental)
 **Read before using**. GPU mode uses FLACCL instead of ffmpeg to encode WAVs to FLAC. This can *encode* files tens of times faster, but with some serious potential drawbacks. FLACCL only likes immediately FLAC-compatible WAVs at common sample rates. It will refuse to convert many kinds of WAV files ffmpeg gladly will. It's much slower to start per file, stalls a bit upon an error, and some errors leave empty FLACs behind at the moment. It also doens't transfer metadata and tags like ffmpeg. This feature should only be used with a collection of generally large input WAVs you are confident will be supported (ex: 44.1kHz 16 bit WAV CD rips) that don't have metadata or tags you care about. This is not usable for something like a collection of short drum samples, or anything with unusual sample rates.
 
+This mode is made with windows in mind. It might work on something else, but it's up to you to figure it out.
+
 ### Preserve Original Files
 Checking this option will preserve all input files, rather than replacing them with the successful converted FLAC files. You may want this if you want to convert FLACs to use elsewhere but still want to keep the input WAVs. This is not checked by default since this script is intended to convert to save space.
 
