@@ -14,6 +14,17 @@ Feature rich GUI batch WAV to FLAC converter in Python using ffmpeg and optional
 
 ## Installation
 
+### Windows
+1. Install python if it isn't installed already. On updated versions of windows 10/11, you can type "python" in CMD and it will lead you to install it.
+2. Install numpy by entering this in CMD: ``pip install numpy``
+3. Download the windows release, extract it to wherever you want, and double click "WAV2FLAC.py" to open (direct download link here)
+
+### Anything else
+1. Install python
+2. Install numpy by entering this in whatever terminal or console your OS uses: ``pip install numpy``
+3. Install ffmpeg
+4. Download the universal release and launch "WAV2FLAC.py" however you normally do in your OS
+
 ## How to Use
 This script is designed to be as easy to use as possible, and with fail safes in place. However, **use at your own risk**. You are responsible for your own files.
 
