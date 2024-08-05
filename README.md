@@ -1,5 +1,5 @@
 # MassWAV2FLAC
-Feature rich GUI batch WAV to FLAC converter in Python using ffmpeg and optionally FLACCL, prioritizing ease of use. Converts all applicable files in all subdirectories of selected folder.
+Feature rich GUI batch WAV to FLAC converter in Python using FFmpeg and optionally FLACCL, prioritizing ease of use. Converts all applicable files in all subdirectories of selected folder.
 
 **Please read carefully before using! This script has the potential to perform unwanted actions!**
 
@@ -22,7 +22,7 @@ Feature rich GUI batch WAV to FLAC converter in Python using ffmpeg and optional
 ### Anything else
 1. Install python
 2. Install numpy by entering this in whatever terminal or console your OS uses: ``pip install numpy``
-3. Install ffmpeg
+3. Install FFmpeg
 4. Download the universal release and launch "WAV2FLAC.py" however you normally do in your OS
 
 ## How to Use
@@ -39,7 +39,7 @@ Conversion can take a while if you have a lot of content. If the console seems s
 By default, this script converts WAVs to FLAC. However, you can use the dropdown box to have it convert FLACs to WAV instead. The "Allow overwriting" setting may be more relevant under this mode, double check it is set to your liking.
 
 ### GPU mode (experimental)
-**Read before using**. GPU mode uses FLACCL instead of ffmpeg to encode WAVs to FLAC. This can *encode* files tens of times faster, but with some serious potential drawbacks. FLACCL only likes immediately FLAC-compatible WAVs at common sample rates. It will refuse to convert many kinds of WAV files ffmpeg gladly will. It's much slower to start per file, stalls a bit upon an error, and some errors leave empty FLACs behind at the moment. It also doens't transfer metadata and tags like ffmpeg. This feature should only be used with a collection of generally large input WAVs you are confident will be supported (ex: 44.1kHz 16 bit WAV CD rips) that don't have metadata or tags you care about. This is not usable for something like a collection of short drum samples, or anything with unusual sample rates.
+**Read before using**. GPU mode uses FLACCL instead of FFmpeg to encode WAVs to FLAC. This can *encode* files tens of times faster, but with some serious potential drawbacks. FLACCL only likes immediately FLAC-compatible WAVs at common sample rates. It will refuse to convert many kinds of WAV files FFmpeg gladly will. It's much slower to start per file, stalls a bit upon an error, and some errors leave empty FLACs behind at the moment. It also doens't transfer metadata and tags like FFmpeg. This feature should only be used with a collection of generally large input WAVs you are confident will be supported (ex: 44.1kHz 16 bit WAV CD rips) that don't have metadata or tags you care about. This is not usable for something like a collection of short drum samples, or anything with unusual sample rates.
 
 This mode is made with windows in mind. It might work on something else, but it's up to you to figure it out.
 
@@ -61,8 +61,8 @@ This is on by default so if there is a pre-existing FLAC, it will simply overwri
 ### Undo inefficient FLAC converts
 Some WAV to FLAC conversions will result in a FLAC output that's a larger file size than the WAV input. This almost exclusively happens with very short WAV files. This setting will undo FLAC conversions that have a larger file size than their input WAV, good if space is your #1 priority.
 
-### Command-line ffmpeg
-This uses ffmpeg via command-line instead of using a windows executable in the same directory. Useful if you're not on windows or want to use a specific version of ffmpeg you already have installed.
+### Command-line FFmpeg
+This uses FFmpeg via command-line instead of using a windows executable in the same directory. Useful if you're not on windows or want to use a specific version of FFmpeg you already have installed.
 
 ## Concerns
 While mass converting WAV files to FLAC to save space is generally a good idea, there *could* be some instances where you might lose important information. Like if a WAV had some kind of unusual custom data written to it, that would probably be lost. I'm not aware of anything like that, but it could exist. Most (if not all) normal tags and metadata are preserved when **not** using GPU mode.
