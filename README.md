@@ -73,5 +73,5 @@ I have tested this program on a large variety of unusual WAV files and formats, 
 
 ## Planned
 - Better handling of FLACCL (GPU) errors
-- Dynamic mix option using both ffmpeg and FLACCL based on file size and info
+- Dynamic mix option using both FFmpeg and FLACCL based on file size and info
 - Show size saved in pop-up box post conversion
