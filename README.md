@@ -31,7 +31,7 @@ This script is designed to be as easy to use as possible, and with fail safes in
 ### Basic Function
 Open the script, and you'll see the main GUI. By default, the settings are optimized for converting WAV to FLAC with intent to save space, replacing the input WAVs upon successful conversions. Overwriting existing files is also enabled by default. This should only be a concern if you already have a FLAC file with the same name as a WAV file in the same directory that you want to keep. These and more can be changed with the on-screen checkboxes. More info on these settings below. 
 
-Next, click "Browse" to select your input directory. This script will convert all files inside the selected directory and its sub-directories. Click "Start", confirm the directory and number of files to be converted look correct, then click "Yes" if so. After the conversion is done, a pop-up with various info will appear, and (hopefully) you're done. Any files that caused an error will be listed in the console and logged.
+Next, click "Browse" to select your input directory. This script will convert all files inside the selected directory and its sub-directories. Click "Start", confirm the directory and number of files to be converted look correct, then click "Yes" if so. After the conversion is done, a pop-up with various info will appear, and (hopefully) you're done. Any files that caused an error will be listed in the console.
 
 Conversion can take a while if you have a lot of content. If the console seems stuck for a while, and no numbers are changing at all, click in the console, hold CTRL and press C, and it should continue appropriately.
 
