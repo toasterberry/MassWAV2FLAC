@@ -1,7 +1,7 @@
 # MassWAV2FLAC
 Feature rich GUI batch WAV to FLAC converter in Python using FFmpeg and optionally FLACCL, prioritizing ease of use. Converts all applicable files in all subdirectories of selected folder.
 
-**Please read carefully before using! This script has the potential to perform unwanted actions!**
+**Please read carefully before using! This script has the potential to perform unwanted actions!** With default settings, this tool is intended to be used to save space by replacing input WAVs with converted FLACs.
 
 ## Features:
 - Preserves file modification dates from input WAV
